@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
-import 'pages/ListItem.dart';
+import 'package:my_app/pages/ListItem.dart';
+import 'pages/newperfume.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: Listitems(), 
+    routes: {
+      '/': (context) => Listitems(),
+      '/newperfume': (context) => const Newperfume(),
+      '/Listitems': (context) => Listitems(),
+    },
   ));
 }
 
