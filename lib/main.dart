@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_app/pages/ListItem.dart';
 import 'pages/newperfume.dart';
+import 'pages/home.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -8,6 +9,7 @@ void main() {
       '/': (context) => Listitems(),
       '/newperfume': (context) => const Newperfume(),
       '/Listitems': (context) => Listitems(),
+      '/Home': (context) => Home(),
     },
   ));
 }

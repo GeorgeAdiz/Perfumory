@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
-class Dashboard extends StatelessWidget {
-  const Dashboard({super.key}); // Fixed: removed space
+
+class Home extends StatelessWidget {
+  const Home({super.key}); // Fixed: removed space
 
   void _showUnderConstruction(BuildContext context) {
     showDialog(
