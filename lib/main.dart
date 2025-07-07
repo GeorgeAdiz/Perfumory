@@ -3,6 +3,8 @@ import 'package:my_app/pages/ListItem.dart';
 import 'pages/newperfume.dart';
 import 'pages/home.dart';
 import 'world_time/home_time.dart';
+import 'world_time/loading.dart';
+import 'world_time/choose_location.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -12,19 +14,10 @@ void main() {
       '/Listitems': (context) => Listitems(),
       '/Home': (context) => Home(),
 
-      // world time routes
-    
-
+        // world time routes
+        
+      '/choose_location': (context) => ChooseLocation(),
+      '/loading': (context) => Loading()
     },
   ));
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-     debugShowCheckedModeBanner: false);
-  }
 }
